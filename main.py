@@ -351,9 +351,8 @@ def load_data(filename: str = 'address-book.pkl') -> AddressBook:
 
 
 def save_data(book: AddressBook, filename: str = 'address-book.pkl') -> None:
-    if book.data:
-        with open(filename, 'wb') as file:
-            dump(book, file)
+    with open(filename, 'wb') as file:
+        dump(book, file)
 
 
 def main() -> None:
